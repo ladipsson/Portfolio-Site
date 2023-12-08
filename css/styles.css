@@ -198,6 +198,7 @@ body {
 /*Projects page*/
 .projects-container {
   width: 100vw;
+  padding-top: 3rem;
 }
 .inner-section {
   width: 80vw;
