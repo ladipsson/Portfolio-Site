@@ -268,6 +268,10 @@ body {
   font-size: 2rem;
 }
 
+.social-handles a{
+  text-decoration: none;
+  color: var(--white-smoke);
+}
 /*RESPONSOVENESS*/
 
 @media screen and (max-width: 430px) {
