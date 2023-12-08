@@ -246,6 +246,10 @@ body {
   -moz-box-shadow: 10px 10px 44px -16px rgba(27, 38, 79, 0.45);
 }
 
+.mb-3 span {
+  color: rgb(255, 106, 0);
+  font-size: 14px;
+}
 .form-title {
   text-shadow: 0 0 10px var(--marian-blue), 0 0 20px var(--marian-blue),
     0 0 40px var(--marian-blue);
