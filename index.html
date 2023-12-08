@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon.png"
+    />
+    <!--font awesome icons-->
+    <script
+      src="https://kit.fontawesome.com/799f5e50bc.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&family=Lilita+One&display=swap"
+      rel="stylesheet"
+    />
+    <!--style sheet-->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <title>ShadCode</title>
+  </head>
+  <body>
+    <div class="contained">
+      <!--Header region-->
+      <header class="header">
+        <div class="logo">
+          <img src="images/shadcode-logo-1.png" alt="" class="blue-logo" />
+          <img src="images/shadcode-logo-2.png" class="white-logo" />
+        </div>
+        <nav class="nav-bar">
+          <div class="hamburger-icon" id="open-btn-menu">
+            <i class="fa-solid fa-bars-staggered"></i>
+          </div>
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#">Home</a></li>
+            <li class="nav-item"><a href="#">About</a></li>
+            <li class="nav-item"><a href="#">Work</a></li>
+            <li class="nav-item"><a href="#">Contact</a></li>
+          </ul>
+          <ul class="header-menu">
+            <li class="menu"><a href="#">Home</a></li>
+            <li class="menu"><a href="#">About</a></li>
+            <li class="menu"><a href="#">Work</a></li>
+            <li class="menu"><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <!--Hero section-->
+      <div class="main-box">
+        <div class="left-box">
+          <h1 class="intro">
+            Hi, I'm Shadrach. <br />
+            A creative Front-end Developer based in
+            <span class="country">Nigeria</span>
+          </h1>
+          <div class="services">
+            <p>
+              <span><img src="images/aster.png" class="aster" alt="" /></span
+              >design
+            </p>
+            <p>
+              <span><img src="images/aster.png" class="aster" alt="" /></span
+              >development
+            </p>
+            <p>
+              <span><img src="images/aster.png" class="aster" alt="" /></span
+              >webflow
+            </p>
+            <p>
+              <span><img src="images/aster.png" class="aster" alt="" /></span
+              >digital marketing
+            </p>
+          </div>
+          <button class="btn btn-outline-success project-cta">
+            Got a project?
+          </button>
+        </div>
+        <div class="right-box">
+          <div class="img-container">
+            <img src="images/profile-img.jpg" alt="shacode profile image" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="about">
+      <div class="my-profile">
+        <div class="info-box">
+          <h2 class="greeting">Hi, I’m Shadrach. Nice to meet you.</h2>
+          <p class="about-me">
+            I'm a Frontend Web Developer building the Front-end of Websites and
+            Web Applications that helps individuals and business achieve
+            successes with their various products or services. Check out some of
+            my work in the Projects section. Follow me on Instagram and LinkedIn
+            where I post useful web development contents from time to time. I'm
+            open to Job opportunities where I can contribute, learn and grow. If
+            you have a good opportunity that matches my skills and experience
+            then don't hesitate to contact me.
+          </p>
+        </div>
+        <div class="skills">
+          <h2 class="skill-set">my skills</h2>
+          <div class="skill-list">
+            <p class="myskills">html</p>
+            <p class="myskills">css</p>
+            <p class="myskills">javascript</p>
+            <p class="myskills">responsive designs</p>
+            <p class="myskills">react js</p>
+            <p class="myskills">terminal</p>
+            <p class="myskills">git/github</p>
+            <p class="myskills">logo design</p>
+            <p class="myskills">python</p>
+            <p class="myskills">django</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects-container">
+      <div class="inner-section">
+        <h2 class="my-works">Personal Projects</h2>
+        <div class="projects">
+          <div class="project-photos">
+            <figure class="projects-img">
+              <img src="images/faq-page.jpg" alt="" />
+            </figure>
+            <!-- <figcaption>An Accordion FAQ page</figcaption> -->
+            <figure class="projects-img">
+              <img src="images/rating-app.jpg" alt="faq" />
+            </figure>
+            <!-- <figcaption>A rating app</figcaption> -->
+            <figure class="projects-img">
+              <img src="images/subscription-page.jpg" alt="faq" />
+            </figure>
+            <!-- <figcaption>An Email Subscription Page</figcaption> -->
+            <figure class="projects-img">
+              <img src="images/age-calc.jpg" alt="faq" />
+            </figure>
+            <!-- <figcaption>An Age Calculator App</figcaption> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--contact form-->
+    <section class="get-in-touch">
+      <h2 class="form-title">Get In Touch With Me</h2>
+      <p class="form-desc">You might as well just say Hello...</p>
+      <div class="contact-form">
+        <div class="mb-3">
+          <label for="name">Your Name</label>
+          <input
+            type="name"
+            class="form-control"
+            id="name"
+            placeholder="Your Name"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email address</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="name@example.com"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea
+            class="form-control"
+            id="message"
+            rows="4"
+            required
+          ></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg" id="submit-btn">
+          Submit
+        </button>
+      </div>
+    </section>
+
+    <!--Footer area-->
+
+    <footer>
+      <div class="my-footer">
+        <div class="left-footer">
+          <p>Designed and coded by @shadCode in 2023</p>
+        </div>
+        <div class="right-footer">
+          <h4>Connect with me on Socials</h4>
+          <div class="social-handles">
+            <a href="https://github.com/ladipsson?tab=repositories"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a href="https://www.instagram.com/shadrachdev/"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/shadrach-arowolo-8b0947106/"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <i class="fa-brands fa-whatsapp"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--boostrap script-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="app.js"></script>
+  </body>
+</html>
