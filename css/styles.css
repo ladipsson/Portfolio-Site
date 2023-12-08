@@ -301,7 +301,7 @@ body {
     height: fit-content;
     /* height: 30vh; */
     width: 50%;
-    background-color: var(--white-smoke);
+    background-color: var(--space-cadet);
     transition: 0.5s ease-out;
     display: flex;
     flex-direction: column;
@@ -315,7 +315,7 @@ body {
   .menu a {
     cursor: pointer;
     text-decoration: none;
-    color: var(--marian-blue);
+    color: var(--white-smoke);
     transition: all 0.5s ease-in-out;
     font-size: 1.2rem;
     font-weight: 600;
