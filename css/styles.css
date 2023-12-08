@@ -358,7 +358,7 @@ body {
   }
 
   .img-container img {
-    width: 15rem;
+    width: 17rem;
     border-radius: 4rem 0 4rem 0;
     box-shadow: 10px 10px 24px 0px rgba(242, 235, 235, 0.106);
     -webkit-box-shadow: 10px 10px 24px 0px rgba(242, 235, 235, 0.185);
@@ -366,7 +366,7 @@ body {
   }
   .left-box {
     text-align: center;
-    width: 80vw;
+    width: 90vw;
   }
 
   .services {
@@ -381,10 +381,10 @@ body {
     padding: 2rem 0;
   }
   .info-box {
-    width: 80%;
+    width: 100%;
   }
   .about-me {
-    font-size: 0.8rem;
+    font-size: 0.95rem;
   }
   .greeting {
     text-align: center;
@@ -394,7 +394,7 @@ body {
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: center;
-    width: 95%;
+    width: 85vw;
     gap: 1rem;
     margin: 0 auto;
   }
@@ -425,7 +425,8 @@ body {
   }
 
   .contact-form {
-    width: 65vw;
+    width: 85vw;
+    margin: 0 auto;
     padding: 2rem 1rem;
     border-radius: 20px 0 20px 0;
   }
