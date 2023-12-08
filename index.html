@@ -168,6 +168,7 @@
             class="form-control"
             id="name"
             placeholder="Your Name"
+            onkeyup="validateName()"
           />
           <span id="name-error"></span>
         </div>
@@ -178,7 +179,7 @@
             class="form-control"
             id="email"
             placeholder="name@example.com"
-            required
+            onkeyup="validateEmail()"
           />
           <span id="email-error"></span>
         </div>
@@ -188,7 +189,7 @@
             class="form-control"
             id="message"
             rows="3"
-            required
+            onkeyup="validateMessage()"
           ></textarea>
           <span id="message-error"></span>
         </div>
