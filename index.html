@@ -162,40 +162,42 @@
       <p class="form-desc">You might as well just say Hello...</p>
       <div class="contact-form">
         <div class="mb-3" id="fullname">
-          <label for="name">Your Name</label>
+          <label for="name"></label>
           <input
             type="name"
             class="form-control"
             id="name"
             placeholder="Your Name"
             onkeyup="validateName()"
-          />
-          <span id="name-error"></span>
+            />
+            <span id="name-error"></span>
         </div>
         <div class="mb-3" id="email-id">
-          <label for="email" class="form-label">Email address</label>
+          <label for="email" class="form-label"></label>
           <input
             type="email"
             class="form-control"
             id="email"
-            placeholder="name@example.com"
+            placeholder="Email Address"
             onkeyup="validateEmail()"
           />
           <span id="email-error"></span>
         </div>
         <div class="mb-3" id="message">
-          <label for="message" class="form-label">Message</label>
+          <label for="message" class="form-label"></label>
           <textarea
             class="form-control"
+            placeholder="Your Message Here"
             id="message"
             rows="3"
             onkeyup="validateMessage()"
           ></textarea>
           <span id="message-error"></span>
         </div>
-        <button type="submit" class="btn btn-primary btn-lg" id="submit-btn">
+        <button type="submit" class="btn btn-primary btn-lg" id="submit-btn" onclick="return validateForm()">
           Submit
         </button>
+        <span id="submitError"></span>
       </div>
     </section>
 
@@ -218,8 +220,9 @@
             <a href="https://www.linkedin.com/in/shadrach-arowolo-8b0947106/"
               ><i class="fa-brands fa-linkedin"></i
             ></a>
-            <a href="https://wa.me/message/PCVOUVZTF2N7M1"><i class="fa-brands fa-whatsapp"></i></a>
-            
+            <a href="https://wa.me/message/PCVOUVZTF2N7M1"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
           </div>
         </div>
       </div>

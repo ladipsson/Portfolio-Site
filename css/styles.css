@@ -136,6 +136,7 @@ body {
 /*About main section*/
 .about {
   background-color: var(--white-smoke);
+  width: 100vw;
 }
 
 .my-profile {
@@ -234,9 +235,11 @@ body {
   color: var(--marian-blue);
   font-family: var(--font-secondary);
   padding: 7rem 0;
+  width: 100vw;
 }
 
 .contact-form {
+  position: relative;
   width: 40vw;
   margin: 0 auto;
   padding: 4rem 3rem;
@@ -246,10 +249,39 @@ body {
   -webkit-box-shadow: 10px 10px 44px -16px rgba(27, 38, 79, 0.45);
   -moz-box-shadow: 10px 10px 44px -16px rgba(27, 38, 79, 0.45);
 }
-
+.mb-3 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: 1.2rem;
+  color: var(--white-smoke);
+}
 .mb-3 span {
-  color: rgb(255, 106, 0);
+  position: absolute;
+  color: red;
   font-size: 14px;
+  font-weight: 400;
+  right: 10px;
+}
+
+#submitError {
+  position: absolute;
+  color: red;
+  font-size: 14px;
+  font-weight: 400;
+  top: 18rem;
+  right: 3rem;
+}
+
+#submitError i{
+  color: seagreen;
+  font-size: 16px;
+}
+.mb-3 span i {
+  color: seagreen;
+  font-size: 16px;
 }
 .form-title {
   text-shadow: 0 0 10px var(--marian-blue), 0 0 20px var(--marian-blue),
@@ -277,6 +309,13 @@ body {
   text-decoration: none;
   color: var(--white-smoke);
 }
+
+
+
+
+
+
+
 /*RESPONSOVENESS*/
 
 @media screen and (max-width: 430px) {
