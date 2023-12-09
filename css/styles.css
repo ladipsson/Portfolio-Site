@@ -74,12 +74,12 @@ body {
 }
 
 .nav-item a:hover {
-  color: var(--true-blue);
+  color: var(--space-cadet);
   font-weight: 700;
 }
 .nav-item a:focus {
-  color: var(--true-blue);
-  font-weight: 700;
+  color: var(--space-cadet);
+  font-weight: 900;
 }
 
 .hamburger-icon {
@@ -241,8 +241,9 @@ body {
 .contact-form {
   position: relative;
   width: 40vw;
-  margin: 0 auto;
   padding: 4rem 3rem;
+  margin: 0 auto;
+  text-align: center;
   background-color: var(--true-blue);
   border-radius: 50px 0 50px 0;
   box-shadow: 10px 10px 44px -16px rgba(27, 38, 79, 0.45);
@@ -275,7 +276,7 @@ body {
   right: 3rem;
 }
 
-#submitError i{
+#submitError i {
   color: seagreen;
   font-size: 16px;
 }
@@ -305,16 +306,10 @@ body {
   font-size: 2rem;
 }
 
-.social-handles a{
+.social-handles a {
   text-decoration: none;
   color: var(--white-smoke);
 }
-
-
-
-
-
-
 
 /*RESPONSOVENESS*/
 
@@ -322,7 +317,6 @@ body {
   .hamburger-icon {
     display: block;
   }
-  
 
   .header-menu a:hover {
     color: var(--true-blue);
