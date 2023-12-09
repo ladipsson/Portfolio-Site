@@ -1,10 +1,16 @@
 const menuBtn = document.querySelector('#open-btn-menu');
 const menu = document.querySelector('.header-menu');
+const mobileMenuItems = document.querySelectorAll('.menu');
 
 menuBtn.addEventListener('click', () => {
     menu.classList.toggle('active'); 
 })
 
+mobileMenuItems.forEach(item => {
+    item.addEventListener('click', () => {
+        menu.classList.remove('active');
+    });
+});
 //form validation
 
 const nameError = document.getElementById('name-error');
@@ -59,7 +65,7 @@ function validateForm() {
         submitError.innerHTML = "Please Enter Correct Details";
         return false;
     } else {
-        submitError.innerHTML = '<i class="fa-solid fa-circle-check"></i>';
+        submitError.innerHTML = "";
         return true;
     }
 }
