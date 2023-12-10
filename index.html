@@ -164,7 +164,7 @@
     <section class="get-in-touch" id="contact">
       <h2 class="form-title">Get In Touch With Me</h2>
       <p class="form-desc">You might as well just say Hello...</p>
-      <form netlify>
+      <form method="post" target="_blank" netlify>
         <div class="contact-form">
           <div class="mb-3" id="fullname">
             <label for="name"></label>
@@ -199,7 +199,6 @@
             ></textarea>
             <span id="message-error"></span>
           </div>
-          <input type="hidden" name="_captcha" value="false" />
           <button
             type="submit"
             class="btn btn-primary btn-lg"
