@@ -69,3 +69,21 @@ function validateForm() {
         return true;
     }
 }
+
+//send Email
+
+// function sendEmail() {
+//     Email.send({
+//         Host : "smtp.gmail.com",
+//         Username : "ladipssonventuresng@gmail.com",
+//         Password : "gbolakpine17",
+//         To : 'princetunde17@gmail.com',
+//         From : document.getElementById('email').value,
+//         Subject : "New Form Message Alert",
+//         Body : "Name: " + document.getElementById('name').value
+//                 + "<br> Email: " + document.getElementById('email').value
+//                 + "<br> Message: " + document.getElementById('message').value
+//     }).then(
+//       message => alert("Message Sent")
+//     );
+// }

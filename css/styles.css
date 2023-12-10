@@ -97,6 +97,10 @@ body {
   padding: 6rem 0;
 }
 
+.project-cta a {
+  text-decoration: none;
+  color: greenyellow;
+}
 .services {
   display: flex;
   align-items: center;
