@@ -38,8 +38,12 @@
       <!--Header region-->
       <header class="header">
         <div class="logo">
-          <img src="images/shadcode-logo-1.png" alt="" class="blue-logo" />
-          <img src="images/shadcode-logo-2.png" class="white-logo" />
+          <a href="./"
+            ><img src="images/shadcode-logo-1.png" alt="" class="blue-logo"
+          /></a>
+          <a href="./"
+            ><img src="images/shadcode-logo-2.png" class="white-logo"
+          /></a>
         </div>
         <nav class="nav-bar">
           <div class="hamburger-icon" id="open-btn-menu">
@@ -169,8 +173,8 @@
             id="name"
             placeholder="Your Name"
             onkeyup="validateName()"
-            />
-            <span id="name-error"></span>
+          />
+          <span id="name-error"></span>
         </div>
         <div class="mb-3" id="email-id">
           <label for="email" class="form-label"></label>
@@ -194,7 +198,12 @@
           ></textarea>
           <span id="message-error"></span>
         </div>
-        <button type="submit" class="btn btn-primary btn-lg" id="submit-btn" onclick="return validateForm()">
+        <button
+          type="submit"
+          class="btn btn-primary btn-lg"
+          id="submit-btn"
+          onclick="return validateForm()"
+        >
           Submit
         </button>
         <span id="submitError"></span>
