@@ -42,7 +42,7 @@ body {
 }
 
 .logo img {
-  width: 4rem;
+  width: 4.5rem;
 }
 
 .white-logo {
@@ -74,7 +74,10 @@ body {
 }
 
 .nav-item a:hover {
-  color: var(--space-cadet);
+  color: var(--white-smoke);
+  background-color: var(--space-cadet);
+  border-radius: 40px;
+  padding: 10px 15px;
   font-weight: 700;
 }
 .nav-item a:focus {
