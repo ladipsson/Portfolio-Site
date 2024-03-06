@@ -2,6 +2,22 @@ const menuBtn = document.querySelector('#open-btn-menu');
 const menu = document.querySelector('.header-menu');
 const mobileMenuItems = document.querySelectorAll('.menu');
 const contactForm = document.getElementById('contact-form');
+const header = document.getElementById('site-header');
+const whiteLogo = document.querySelector('.white-logo');
+const blueLogo = document.querySelector('.blue-logo');
+
+window.onscroll = () => {
+    if(window.scrollY > 160) {
+        header.classList.add('shadow');
+        blueLogo.style.display = 'none';
+        whiteLogo.style.display = 'block';
+    } else {
+        header.classList.remove('shadow');
+        whiteLogo.style.display = 'none';
+        blueLogo.style.display = 'block';
+    }
+};
+
 
 menuBtn.addEventListener('click', () => {
     menu.classList.toggle('active'); 

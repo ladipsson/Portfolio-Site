@@ -41,6 +41,12 @@ body {
   width: 100%;
 }
 
+.shadow {
+  box-shadow: 0 10px 34px 0 rgba(0, 0, 0, 0.886);
+  background-color: var(--space-cadet);
+  transition: all 0.3s ease-in;
+}
+
 .logo img {
   width: 4.5rem;
 }
@@ -96,8 +102,9 @@ body {
   align-items: center;
   gap: 1rem;
   width: 80vw;
-  margin: 1.5rem auto;
-  padding: 6rem 0;
+  /* margin: 1.5rem auto; */
+  margin: 4rem auto;
+  padding: 6rem 0 0;
 }
 
 .project-cta a {
@@ -112,15 +119,15 @@ body {
   color: greenyellow;
 }
 
-.img-container {
+/* .img-container {
   border-radius: 0 2rem 2rem 0;
-}
+} */
+
 .img-container img {
   width: 25rem;
-  border-radius: 8rem 0 8rem 0;
-  box-shadow: 10px 10px 24px 0px rgba(242, 235, 235, 0.43);
-  -webkit-box-shadow: 10px 10px 24px 0px rgba(242, 235, 235, 0.43);
-  -moz-box-shadow: 10px 10px 24px 0px rgba(242, 235, 235, 0.43);
+  padding: 2rem;
+  border-radius: 50%;
+  border: 2px solid greenyellow;
 }
 
 .aster {
@@ -132,8 +139,33 @@ body {
   font-family: var(--font-primary);
 }
 
+.name {
+  color: greenyellow;
+  font-weight: bolder;
+}
+
 .country {
   color: greenyellow;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 150px;
+  margin-left: -1.2rem;
+}
+
+.fa-brands {
+  text-decoration: none;
+  cursor: pointer;
+  color: greenyellow;
+  font-weight: 200;
+  transition: all 0.5s ease-in-out;
+}
+
+.fa-brands:hover {
+  color: var(--white-smoke);
 }
 
 .project-cta {
@@ -142,6 +174,25 @@ body {
 
 /*About main section*/
 .about {
+  --size: 29px;
+  --R: calc(var(--size) * 1.28);
+  --position: top;
+
+  -webkit-mask: radial-gradient(
+        var(--R) at left 50% var(--position) calc(1.8 * var(--size)),
+        #000 99%,
+        #0000 101%
+      )
+      left calc(50% - 2 * var(--size)) var(--position) 0 / calc(4 * var(--size))
+      100%,
+    radial-gradient(
+        var(--R) at left 50% var(--position) calc(-0.8 * var(--size)),
+        #0000 99%,
+        #000 101%
+      )
+      left 50% var(--position) var(--size) / calc(4 * var(--size)) 100% repeat-x;
+
+  height: calc(var(--size) + 30rem);
   background-color: var(--white-smoke);
   width: 100vw;
 }
