@@ -157,12 +157,13 @@
     <section class="get-in-touch" id="contact">
       <h2 class="form-title">Get In Touch With Me</h2>
       <p class="form-desc">You might as well just say Hello...</p>
-      <form name="contact-me" method="POST" netlify netlify-honeypot="bot-field">
+      <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" onsubmit="submit">
         <div id="contact-form" class="contact-form">
           <div class="mb-3" id="fullname">
             <label for="name"></label>
             <input
               type="name"
+              name="name"
               class="form-control"
               id="name"
               placeholder="Your Name"
@@ -174,6 +175,7 @@
             <label for="email" class="form-label"></label>
             <input
               type="email"
+              name="email"
               class="form-control"
               id="email"
               placeholder="Email Address"
@@ -185,6 +187,7 @@
             <label for="message" class="form-label"></label>
             <textarea
               class="form-control"
+              name="message"
               placeholder="Your Message Here"
               id="message"
               rows="3"
