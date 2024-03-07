@@ -537,6 +537,7 @@ body {
   .about-me {
     font-size: 0.95rem;
     line-height: 1.3;
+    text-align: center;
   }
   .greeting {
     text-align: center;
@@ -765,5 +766,6 @@ body {
     font-size: 1.2rem;
     line-height: 1.3;
     width: 100%;
+    text-align: center;
   }
 }
