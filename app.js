@@ -106,21 +106,21 @@ function validateForm() {
 // }
 
 //contact form background color changing
-let intervalID;
+// let intervalID;
 
-function changeColor() {
-    if(!intervalID) {
-        intervalID = setInterval(changeRandomColor, 1000);
-    }
-}
+// function changeColor() {
+//     if(!intervalID) {
+//         intervalID = setInterval(changeRandomColor, 1000);
+//     }
+// }
 
-function changeRandomColor() {
-    const randomColor = Math.floor(Math.random() * 16777215).toString(16);
-    contactForm.style.backgroundColor = `#${randomColor}`;
-}
+// function changeRandomColor() {
+//     const randomColor = Math.floor(Math.random() * 16777215).toString(16);
+//     contactForm.style.backgroundColor = `#${randomColor}`;
+// }
 
 // function stopColorChange() {
 //     clearInterval(intervalID);
 // }
 
-changeColor();
+// changeColor();

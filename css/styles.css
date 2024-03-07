@@ -286,9 +286,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* gap: 2rem; */
   flex-basis: 1 1 0;
-  /* padding: 3rem 0; */
 }
 
 .greenland {
@@ -303,8 +301,9 @@ body {
   background: -webkit-linear-gradient(231deg, #ff0000 0%, #00ff00 80%);
   background: -moz-linear-gradient(231deg, #ff0000 0%, #00ff00 80%);
   margin: 0 auto;
-  padding: 3rem 0;
-  color: greenyellow;
+  text-align: center;
+  padding: 1rem 0;
+  color: var(--white-smoke);
   font-size: 1.2rem;
   border-radius: 10px;
   transition: 0.5s ease-in-out;
@@ -326,7 +325,7 @@ body {
   font-weight: 700;
 }
 .projects-img img {
-  width: 23rem;
+  width: 25rem;
 }
 
 /*contact form*/
@@ -345,11 +344,11 @@ body {
 .contact-form {
   position: relative;
   width: 40vw;
-  padding: 4rem 3rem;
+  padding: 3rem 2rem;
   margin: 0 auto;
   text-align: center;
-  background-color: var(--true-blue);
-  border-radius: 50px;
+  background-color: var(--space-cadet);
+  border-radius: 10px;
   box-shadow: 10px 10px 44px -16px rgba(27, 38, 79, 0.45);
   -webkit-box-shadow: 10px 10px 44px -16px rgba(27, 38, 79, 0.45);
   -moz-box-shadow: 10px 10px 44px -16px rgba(27, 38, 79, 0.45);
@@ -388,11 +387,7 @@ body {
   color: seagreen;
   font-size: 16px;
 }
-.form-title {
-  text-shadow: 0 0 10px var(--marian-blue), 0 0 20px var(--marian-blue),
-    0 0 40px var(--marian-blue);
-  /* 0 0 80px var(--marian-blue); */
-}
+
 /*Footer*/
 
 .my-footer {
@@ -728,7 +723,7 @@ body {
     width: 80vw;
     margin: 0 auto;
     padding: 1rem 1rem;
-    border-radius: 20px;
+    border-radius: 5px;
   }
 
   /*Footer*/
