@@ -690,7 +690,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 85%;
-    gap: 1;
+    gap: 0.5;
     margin: 0 auto;
   }
 
