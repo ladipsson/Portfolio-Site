@@ -29,6 +29,8 @@ body {
   color: var(--white-smoke);
   scroll-behavior: smooth;
   font-family: var(--font-primary);
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 .contained {
@@ -381,14 +383,14 @@ body {
   margin: 0 auto;
   color: var(--richBlack);
   font-family: var(--font-secondary);
-  padding: 7rem 0;
+  padding: 6rem 0;
   width: 100vw;
 }
 
 .contact-form {
   position: relative;
   width: 40vw;
-  padding: 3rem 2rem;
+  padding: 2rem 2rem;
   margin: 0 auto;
   text-align: center;
   background-color: var(--richBlack);
@@ -465,6 +467,25 @@ body {
   text-decoration: none;
   color: var(--white-smoke);
 }
+
+
+::-webkit-scrollbar {
+  width: 5px;                   /* width of the entire scrollbar */
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--babyPowderLight);
+  border-radius: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--crimson);
+  border-radius: 10px;
+}
+
+
+
 
 /*RESPONSOVENESS*/
 /* For ipad pro device */
