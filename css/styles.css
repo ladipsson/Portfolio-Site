@@ -12,15 +12,23 @@
   --true-blue: #576ca8;
   --jet-black: #302b27;
   --white-smoke: #f5f3f5;
+  --richBlack: #040f0f;
+  --forestGreen: #248232;
+  --pigmentGreen: #2ba84a;
+  --gunmetal: #1e1f1f;
+  --babyPowderLight: #a8c0a8;
+  --babyPowder: #fcfffc;
+  --crimson: #dc143c;
 }
 
 body {
   width: 100%;
   /* height: 100vh; */
   /* margin: 0 auto; */
-  background-color: var(--space-cadet);
+  background-color: var(--richBlack);
   color: var(--white-smoke);
   scroll-behavior: smooth;
+  font-family: var(--font-primary);
 }
 
 .contained {
@@ -38,13 +46,13 @@ body {
   align-items: center;
   padding: 0.8rem 3rem;
   /* margin-top: 2rem; */
-  background-color: var(--white-smoke);
+  background-color: var(--richBlack);
   width: 100%;
 }
 
 .shadow {
   box-shadow: 0 10px 34px 0 rgba(0, 0, 0, 0.849);
-  background-color: var(--space-cadet);
+  background-color: var(--richBlack);
   transition: all 0.5s ease-in;
 }
 
@@ -59,6 +67,7 @@ body {
 .header-menu {
   display: none;
 }
+
 .nav-list {
   display: flex;
   justify-content: flex-end;
@@ -71,30 +80,33 @@ body {
 }
 
 .nav-list .nav-item {
-  margin: 0 2rem;
+  margin: 0 6px;
+  text-align: center;
 }
 .nav-item a {
   cursor: pointer;
   text-decoration: none;
-  color: var(--marian-blue);
-  transition: all 0.3s ease-in-out;
+  color: var(--babyPowder);
+  padding: 10px 10px;
+  transition: all 0.4s ease-in;
 }
 
 .nav-item a:hover {
-  color: var(--white-smoke);
-  background-color: var(--space-cadet);
-  border-radius: 40px;
-  padding: 10px 15px;
+  color: var(--richBlack);
+  background-color: var(--babyPowder);
+  /* border-radius: 40px; */
   font-weight: 700;
 }
 .nav-item a:focus {
-  color: var(--space-cadet);
+  color: var(--richBlack);
+  background-color: var(--babyPowder);
   font-weight: 900;
 }
 
 .hamburger-icon {
   display: none;
 }
+
 /*main-content area*/
 
 .main-box {
@@ -197,12 +209,12 @@ body {
       left 50% var(--position) var(--size) / calc(4 * var(--size)) 100% repeat-x;
 
   height: calc(var(--size) + 30rem);
-  background-color: var(--white-smoke);
+  background-color: var(--babyPowder);
   width: 100vw;
 }
 
 .my-profile {
-  color: var(--space-cadet);
+  color: var(--richBlack);
   margin: 0 auto;
   padding: 6rem 0;
   display: flex;
@@ -228,7 +240,7 @@ body {
 }
 
 .skills {
-  color: var(--space-cadet);
+  color: var(--richBlack);
   text-transform: capitalize;
 }
 
@@ -258,18 +270,16 @@ body {
   gap: 1.3rem;
 }
 
-.myskills {
+/* .myskills {
   background-color: var(--space-cadet);
   color: var(--white-smoke);
   border-radius: 5px;
   text-align: center;
   padding: 0.5rem 0.5rem;
   width: 9rem;
-  /* margin-bottom: 1rem;
-  margin-right: 1rem; */
   font-size: 0.7rem;
   font-weight: 600;
-}
+} */
 
 /*Projects page*/
 .projects-container {
@@ -277,6 +287,7 @@ body {
 }
 .inner-section {
   width: 80vw;
+  height: 500px;
   text-align: center;
   margin: 0 auto;
   padding: 3rem 0;
@@ -287,43 +298,76 @@ body {
   justify-content: center;
   align-items: center;
   flex-basis: 1 1 0;
+  column-gap: 2rem;
 }
 
-.greenland {
+.weblink {
   cursor: pointer;
   background-color: none;
   text-decoration: none;
+  text-transform: uppercase;
+  color: var(--pigmentGreen);
+  font-size: 1.2rem;
+  font-family: var(--font-secondary);
 }
 
+.weblink:hover {
+  color: var(--babyPowder);
+}
+
+.site-name {
+  font-size: 1.2rem;
+  font-family: var(--font-secondary);
+}
+
+.portfolio {
+  padding: 1rem;
+  border: 2px solid var(--babyPowder);
+  transition: all 0.5s ease-in;
+}
+
+.portfolio:hover {
+  border: 2px solid var(--pigmentGreen);
+}
+
+.portfolio:focus {
+  border: 2px solid var(--pigmentGreen);
+}
 .projects-img {
   /* background-color: var(--jet-black); */
-  background: linear-gradient(231deg, #ff0000 0%, #00ff00 80%);
+  /* background: linear-gradient(231deg, #ff0000 0%, #00ff00 80%);
   background: -webkit-linear-gradient(231deg, #ff0000 0%, #00ff00 80%);
-  background: -moz-linear-gradient(231deg, #ff0000 0%, #00ff00 80%);
-  margin: 0 auto;
+  background: -moz-linear-gradient(231deg, #ff0000 0%, #00ff00 80%); */
+  /* margin: 0 auto; */
   text-align: center;
-  padding: 1rem 0;
   color: var(--white-smoke);
   font-size: 1.2rem;
-  border-radius: 10px;
-  transition: 0.5s ease-in-out;
-  box-shadow: 10px 10px 11px -3px rgba(240, 240, 240, 0.3);
+  object-fit: fill;
+  /* height: 100%; */
+  width: 25rem;
+  /* box-shadow: 10px 10px 11px -3px rgba(240, 240, 240, 0.3);
   -webkit-box-shadow: 10px 10px 11px -3px rgba(240, 240, 240, 0.3);
-  -moz-box-shadow: 10px 10px 11px -3px rgba(240, 240, 240, 0.3);
+  -moz-box-shadow: 10px 10px 11px -3px rgba(240, 240, 240, 0.3); */
+}
+
+.portfolio-txt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .site-name {
   padding-top: 1rem;
 }
-.projects-img:hover {
-  /* background-color: greenyellow; */
+/* .projects-img:hover {
+  background-color: greenyellow;
   background: linear-gradient(53deg, #ff0000 0%, #00ff00 80%);
   background: -webkit-linear-gradient(53deg, #ff0000 0%, #00ff00 80%);
   background: -moz-linear-gradient(53deg, #ff0000 0%, #00ff00 80%);
   color: var(--space-cadet);
   text-shadow: 4px 4px 2px rgba(218, 194, 194, 0.6);
   font-weight: 700;
-}
+} */
 .projects-img img {
   width: 25rem;
 }
@@ -331,11 +375,11 @@ body {
 /*contact form*/
 
 .get-in-touch {
-  background-color: var(--white-smoke);
+  background-color: var(--babyPowder);
   text-align: center;
   text-transform: capitalize;
   margin: 0 auto;
-  color: var(--marian-blue);
+  color: var(--richBlack);
   font-family: var(--font-secondary);
   padding: 7rem 0;
   width: 100vw;
@@ -347,12 +391,24 @@ body {
   padding: 3rem 2rem;
   margin: 0 auto;
   text-align: center;
-  background-color: var(--space-cadet);
+  background-color: var(--richBlack);
   border-radius: 10px;
   box-shadow: 10px 10px 44px -16px rgba(27, 38, 79, 0.45);
   -webkit-box-shadow: 10px 10px 44px -16px rgba(27, 38, 79, 0.45);
   -moz-box-shadow: 10px 10px 44px -16px rgba(27, 38, 79, 0.45);
 }
+
+.form-btn {
+  background-color: var(--crimson);
+  border: none;
+  padding: 10px 80px;
+  transition: all 0.4s ease-in;
+}
+
+.form-btn:hover {
+  background-color: var(--pigmentGreen);
+}
+
 .mb-3 {
   position: relative;
   display: flex;
