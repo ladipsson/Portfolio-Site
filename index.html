@@ -46,7 +46,7 @@
       <header id="site-header" class="header">
         <div class="logo">
           <a href="./"
-            ><img src="images/shadcode-logo-1.png" alt="" class="blue-logo"
+            ><img src="images/shadcode-logo-2.png" alt="" class="blue-logo"
           /></a>
           <a href="./"
             ><img src="images/shadcode-logo-2.png" class="white-logo"
@@ -136,18 +136,31 @@
 
     <section class="projects-container" id="work">
       <div class="inner-section">
-        <h2 class="my-works">Work</h2>
         <div class="projects">
           <div class="project-photos">
-            <figure class="projects-img">
-              <a
-                target="_blank" href="https://greenlandmediaproductions.com/"
-                class="greenland"
-              >
-                <img src="images/project1.png" alt="greenland media"
-              /></a>
-              <p class="site-name">Click to View<br>Greenland Media Production</p>
-            </figure>
+            <div class="portfolio">
+              <img
+                class="projects-img"
+                src="images/Greenland2 card.jpg"
+                alt="greenland media"
+              />
+              <div class="portfolio-txt">
+                <p class="site-name">Greenland Media Productions</p>
+                <a href="https://greenlandmediaproductions.com/" class="weblink">Visit Website</a>
+              </div>
+            </div>
+
+            <div class="portfolio">
+              <img
+                class="projects-img"
+                src="images/kolobi detail card.jpg"
+                alt="Kolobi Music"
+              />
+              <div class="portfolio-txt">
+                <p class="site-name">Kolobi Music</p>
+                <a href="https://kolobimusic.netlify.app/" class="weblink">Visit Website</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -157,7 +170,13 @@
     <section class="get-in-touch" id="contact">
       <h2 class="form-title">Get In Touch With Me</h2>
       <p class="form-desc">You might as well just say Hello...</p>
-      <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" onsubmit="submit">
+      <form
+        name="contact"
+        method="POST"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+        onsubmit="submit"
+      >
         <div id="contact-form" class="contact-form">
           <div class="mb-3" id="fullname">
             <label for="name"></label>
@@ -197,7 +216,7 @@
           </div>
           <button
             type="submit"
-            class="btn btn-primary btn-lg"
+            class="form-btn btn btn-primary btn-lg"
             id="submit-btn"
             onclick="return validateForm()"
           >
